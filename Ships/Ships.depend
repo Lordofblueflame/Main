@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1623112763 source:d:\c++\statki 2\statki2\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstdlib>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<Windows.h>
+	<unistd.h>
+
