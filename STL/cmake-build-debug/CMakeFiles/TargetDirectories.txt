@@ -1,0 +1,3 @@
+D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/nana.dir
+D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

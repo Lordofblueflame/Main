@@ -1,0 +1,121 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_16247/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_16247.dir\build.make CMakeFiles/cmTC_16247.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_16247.dir/CheckIncludeFile.cxx.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTC_16247.dir\CheckIncludeFile.cxx.obj -c "D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx:1:10: fatal error: pthread.h: No such file or directory
+    1 | #include <pthread.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles\cmTC_16247.dir\build.make:84: recipe for target 'CMakeFiles/cmTC_16247.dir/CheckIncludeFile.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_16247.dir/CheckIncludeFile.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_16247/fast' failed
+mingw32-make.exe: *** [cmTC_16247/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CXXBuiltIn_FS_BuiltIn failed with the following output:
+Change Dir: D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_f19e0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f19e0.dir\build.make CMakeFiles/cmTC_f19e0.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f19e0.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe    -DCXXBuiltIn_FS_BuiltIn   -o CMakeFiles\cmTC_f19e0.dir\src.cxx.obj -c "D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx: In function 'int main()':
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:4:22: error: 'std::filesystem' has not been declared
+    4 |                 std::filesystem::path p{" mp/"};
+      |                      ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:28: error: 'std::filesystem' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                            ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:82: error: 'make_error_code' is not a member of 'std'
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                  ^~~~~~~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:103: error: 'std::errc' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                                       ^~~~
+CMakeFiles\cmTC_f19e0.dir\build.make:84: recipe for target 'CMakeFiles/cmTC_f19e0.dir/src.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f19e0.dir/src.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_f19e0/fast' failed
+mingw32-make.exe: *** [cmTC_f19e0/fast] Error 2
+
+
+Source file was:
+#include <filesystem>
+            int main()
+            {
+                std::filesystem::path p{"	mp/"};
+                throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+            }
+Performing C++ SOURCE FILE Test CXXBuiltIn_FS_stdcppfs failed with the following output:
+Change Dir: D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_5ae22/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5ae22.dir\build.make CMakeFiles/cmTC_5ae22.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ae22.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe    -DCXXBuiltIn_FS_stdcppfs   -o CMakeFiles\cmTC_5ae22.dir\src.cxx.obj -c "D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx: In function 'int main()':
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:4:22: error: 'std::filesystem' has not been declared
+    4 |                 std::filesystem::path p{" mp/"};
+      |                      ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:28: error: 'std::filesystem' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                            ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:82: error: 'make_error_code' is not a member of 'std'
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                  ^~~~~~~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:103: error: 'std::errc' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                                       ^~~~
+CMakeFiles\cmTC_5ae22.dir\build.make:84: recipe for target 'CMakeFiles/cmTC_5ae22.dir/src.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5ae22.dir/src.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_5ae22/fast' failed
+mingw32-make.exe: *** [cmTC_5ae22/fast] Error 2
+
+
+Source file was:
+#include <filesystem>
+            int main()
+            {
+                std::filesystem::path p{"	mp/"};
+                throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+            }
+Performing C++ SOURCE FILE Test CXXBuiltIn_FS_cppfs failed with the following output:
+Change Dir: D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_f5070/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f5070.dir\build.make CMakeFiles/cmTC_f5070.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5070.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe    -DCXXBuiltIn_FS_cppfs   -o CMakeFiles\cmTC_f5070.dir\src.cxx.obj -c "D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx: In function 'int main()':
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:4:22: error: 'std::filesystem' has not been declared
+    4 |                 std::filesystem::path p{" mp/"};
+      |                      ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:28: error: 'std::filesystem' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                            ^~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:82: error: 'make_error_code' is not a member of 'std'
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                  ^~~~~~~~~~~~~~~
+D:\Programy na C++\untitled\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:5:103: error: 'std::errc' has not been declared
+    5 |                 throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+      |                                                                                                       ^~~~
+CMakeFiles\cmTC_f5070.dir\build.make:84: recipe for target 'CMakeFiles/cmTC_f5070.dir/src.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f5070.dir/src.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Programy na C++/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_f5070/fast' failed
+mingw32-make.exe: *** [cmTC_f5070/fast] Error 2
+
+
+Source file was:
+#include <filesystem>
+            int main()
+            {
+                std::filesystem::path p{"	mp/"};
+                throw std::filesystem::filesystem_error("Empty file name!", std::make_error_code(std::errc::invalid_argument));
+            }
