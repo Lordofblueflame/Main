@@ -1,0 +1,3 @@
+D:/Programy na C++/wskazniki/cmake-build-debug/CMakeFiles/wskazniki.dir
+D:/Programy na C++/wskazniki/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programy na C++/wskazniki/cmake-build-debug/CMakeFiles/rebuild_cache.dir
