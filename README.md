@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Lordofblueflame
-- 👀 I’m interested in programming in C# but my only and true love is C++ because of it's flexibility and many posiblites that this language can bring
+- 👀 I’m interested in programming in C# but my only and true love is C++ because of it's flexibility and many possibilities that this language can bring
 - 🌱 I’m currently learning OOP in C#
 - 📫 How to reach me? Easiest way is by E-mail Cepkamil64@gmail.com i check it everyday
 <!---
